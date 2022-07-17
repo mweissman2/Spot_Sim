@@ -97,8 +97,8 @@ namespace champ
 
                 leg_clocks[0] = elapsed_time_ref - (0.0f * stride_period);
                 leg_clocks[1] = elapsed_time_ref - (0.5f * stride_period);
-                leg_clocks[2] = elapsed_time_ref - (0.5f * stride_period);
-                leg_clocks[3] = elapsed_time_ref - (0.0f * stride_period);
+                leg_clocks[2] = elapsed_time_ref - (0.75f * stride_period);
+                leg_clocks[3] = elapsed_time_ref - (0.25f * stride_period);
 
                 for(int i = 0; i < 4; i++)
                 {
