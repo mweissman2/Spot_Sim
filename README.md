@@ -1,10 +1,52 @@
 # RBE521_Spot
 RBE521 Term Project
 
-Clone the Repo in src of your workspace
+This project was run on Ubuntu 20.04 with ROS Noetic
 
-cd into workspace 
-run:
+This project uses the champ package, for more information see: https://github.com/chvmp/champ
+
+To install and run this package, follow the below commands:
+
+A catkin workspace should be used for this project:
+use catkin_make to create the workspace
+
+When a new terminal is launched, please always run the following first:
+```
+cd /path/to/catkin_ws
+source devel/setup.bash
+```
+
+Clone the Repo in src of your workspace:
+```
+sudo apt install -y python-rosdep
+cd <your_ws>/src
+gitclone https://github.com/mweissman2/Spot_Sim.git
+```
+
+cd back into workspace 
+```
+cd ..
 rosdep install --from-paths src --ignore-src -r -y
+catkin_make
+```
 
-catkin build or catkin_make depending on how the workspace was created.
+Running the programs:
+To launch the spot robot in the outdoor environment in Gazebo run the following:
+```
+roslaunch spot_config gazebo.launch
+```
+In another terminal, run the following for teleoperation (or publish custom Twist msg over \cmd_vel)
+```
+roslaunch champ_teleop teleop.launch
+```
+To run the data acquisition for capturing foot position data, run the following:
+```
+rosrun data_acq foot_pos.py
+```
+
+Note: if you desire to the simulation with a different robot configuration, simply change spot_config in the previous command to the desired robot config.
+Ex: anymal_c_config
+Note: Sometimes the gazebo simulation may be slow in the outdoor environment, if this is the case, run the following to launch the simulation in an empty world:
+```
+roslaunch spot_config gazebo.launch gazebo_world:="default"
+```
