@@ -1,7 +1,7 @@
 # RBE521_Spot
 RBE521 Term Project
 
-![screen-gif](./docs/Spot_Trot.gif) ![screen-gif](./docs/Anymal_Trot.gif)
+![screen-gif](./docs/Spot_Trot.gif)                   ![screen-gif](./docs/Anymal_Trot.gif)
 
 This project was run on Ubuntu 20.04 with ROS Noetic
 
@@ -52,3 +52,4 @@ Note: Sometimes the gazebo simulation may be slow in the outdoor environment, if
 ```
 roslaunch spot_config gazebo.launch gazebo_world:="default"
 ```
+![screen-gif](./docs/spot_rotary_gallop.gif)
