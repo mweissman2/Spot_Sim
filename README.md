@@ -1,6 +1,8 @@
 # RBE521_Spot
 RBE521 Term Project
 
+![screen-gif](./docs/Spot_Trot.gif)
+
 This project was run on Ubuntu 20.04 with ROS Noetic
 
 This project uses the champ package, for more information see: https://github.com/chvmp/champ
