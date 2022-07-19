@@ -48,6 +48,7 @@ rosrun data_acq foot_pos.py
 
 Note: if you desire to the simulation with a different robot configuration, simply change spot_config in the previous command to the desired robot config.
 Ex: anymal_c_config
+
 Note: Sometimes the gazebo simulation may be slow in the outdoor environment, if this is the case, run the following to launch the simulation in an empty world:
 ```
 roslaunch spot_config gazebo.launch gazebo_world:="default"
