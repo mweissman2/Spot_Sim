@@ -53,4 +53,5 @@ Note: Sometimes the gazebo simulation may be slow in the outdoor environment, if
 ```
 roslaunch spot_config gazebo.launch gazebo_world:="default"
 ```
+
 ![screen-gif](./docs/spot_rotary_gallop.gif)
