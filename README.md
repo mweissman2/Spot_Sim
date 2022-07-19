@@ -1,7 +1,7 @@
 # RBE521_Spot
 RBE521 Term Project
 
-![screen-gif](./docs/Spot_Trot.gif)
+![screen-gif](./docs/Spot_Trot.gif) ![screen-gif](./docs/Anymal_Trot.gif)
 
 This project was run on Ubuntu 20.04 with ROS Noetic
 
