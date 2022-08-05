@@ -54,6 +54,10 @@ To launch the spot robot in the outdoor environment in Gazebo run the following:
 ```
 roslaunch spot_config gazebo.launch
 ```
+To launch anymal c in outdoor environment in Gazebo run the following:
+```
+roslaunch anymal_c_config gazebo.launch
+```
 In another terminal, run the following for teleoperation (or publish custom Twist msg over \cmd_vel)
 ```
 roslaunch champ_teleop teleop.launch
