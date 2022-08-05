@@ -25,6 +25,23 @@ cd <your_ws>/src
 gitclone https://github.com/mweissman2/Spot_Sim.git
 ```
 
+Depending on what robot you want to work with, you can clone the description repos of those robots. For eg: If you want to work with Spot, use
+```
+git clone -b gazebo https://github.com/chvmp/spot_ros
+```
+
+For Anymal C:
+```
+git clone https://github.com/chvmp/anymal_c_simple_description
+```
+
+Similar commands for all the available robots can be found in /robots/install_descriptions
+For installing the description files for all the robots run:
+```
+cd robots
+./install_descriptions
+```
+
 cd back into workspace 
 ```
 cd ..
